@@ -1,0 +1,37 @@
+/* Adobe Fonts loaded via Typekit embed in app.html */
+/* Clarendon URW Extra Wide Bold → "clarendon-urw", weight 700 */
+/* Acumin Pro Black              → "acumin-pro",   weight 900 */
+/* Acumin Pro Regular/Light      → "acumin-pro",   weight 300-400 */
+
+:root {
+  --yellow: #F5A800;
+  --black: #0A0A0A;
+  --white: #FFFFFF;
+  --gray: #141414;
+
+  --font-display: "clarendon-urw", "Rockwell Extra Bold", Georgia, serif;
+  --font-sans: "acumin-pro", "Arial Black", sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--yellow);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--black);
+  color: var(--yellow);
+}
