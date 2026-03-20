@@ -25,6 +25,15 @@
     justify-content: space-between;
   }
 
+  @media (max-width: 768px) {
+    footer {
+      flex-direction: column;
+      gap: 20px;
+      padding: 32px 20px;
+      text-align: center;
+    }
+  }
+
   .logo-link {
     display: flex;
     align-items: center;

@@ -63,6 +63,23 @@
     padding: 120px 48px 140px;
   }
 
+  @media (max-width: 768px) {
+    section { padding: 64px 20px 80px; }
+    .work-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    .work-grid { grid-template-columns: 1fr; gap: 10px; }
+    /* Override inline grid-column spans so all cards go full width */
+    :global(.work-card) { grid-column: span 1 !important; }
+    .card-inner { aspect-ratio: 16/9 !important; }
+    /* Keep card info always visible on mobile (no hover) */
+    .card-info { transform: translateY(0); }
+    .card-cat { opacity: 1; transform: translateY(0); }
+  }
+
   .section-label {
     font-size: 11px;
     font-weight: 500;

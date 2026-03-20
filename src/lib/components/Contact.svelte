@@ -53,6 +53,12 @@
     overflow: hidden;
   }
 
+  @media (max-width: 768px) {
+    section { padding: 80px 20px; }
+    .actions { flex-direction: column; gap: 24px; }
+    .btn-primary { width: 100%; text-align: center; padding: 18px 32px; }
+  }
+
   .bg-text {
     position: absolute;
     top: 50%;

@@ -172,6 +172,10 @@
     padding: 0 48px 64px;
   }
 
+  @media (max-width: 768px) {
+    #hero { padding: 0 20px 48px; }
+  }
+
   .particle-canvas {
     position: absolute;
     inset: 0;
@@ -241,6 +245,16 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-top: 44px;
+  }
+
+  @media (max-width: 768px) {
+    .hero-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 28px;
+      margin-top: 28px;
+    }
+    .scroll-hint { display: none; }
   }
 
   .hero-tagline {

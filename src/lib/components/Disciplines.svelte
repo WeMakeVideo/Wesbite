@@ -86,6 +86,18 @@
     padding: 120px 48px 140px;
   }
 
+  @media (max-width: 768px) {
+    section { padding: 64px 20px 80px; }
+    .section-label { margin-bottom: 40px; }
+    .grid { grid-template-columns: 1fr; }
+    .discipline {
+      padding: 40px 0 !important;
+      border-right: none !important;
+    }
+    .discipline:not(:last-child) { border-bottom: 1px solid rgba(10,10,10,0.12); }
+    .arrow { right: 0 !important; bottom: 40px !important; }
+  }
+
   .section-label {
     font-size: 11px;
     font-weight: 500;

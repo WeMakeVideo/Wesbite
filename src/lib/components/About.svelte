@@ -76,6 +76,16 @@
     align-items: center;
   }
 
+  @media (max-width: 768px) {
+    section {
+      grid-template-columns: 1fr;
+      gap: 48px;
+      padding: 64px 20px 80px;
+    }
+    .stats { grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .stat-num { font-size: 36px; }
+  }
+
   .section-label {
     font-size: 11px;
     font-weight: 500;

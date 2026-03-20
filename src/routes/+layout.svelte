@@ -9,7 +9,12 @@
   let cursorVisible = false;
   let cursorText = '';
 
+  // Only enable custom cursor on pointer/mouse devices
+  const isPointerDevice = () => window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
   onMount(() => {
+    if (!isPointerDevice()) return;
+
     const move = (e) => {
       cursorX = e.clientX;
       cursorY = e.clientY;
@@ -55,7 +60,9 @@
 <slot />
 
 <style>
-  :global(*) { cursor: none !important; }
+  @media (hover: hover) and (pointer: fine) {
+    :global(*) { cursor: none !important; }
+  }
 
   .cursor {
     position: fixed;
