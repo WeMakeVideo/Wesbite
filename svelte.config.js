@@ -1,5 +1,9 @@
 import adapter from '@sveltejs/adapter-auto';
 
 export default {
-  kit: { adapter: adapter() }
+  kit: {
+    adapter: adapter({
+      runtime: 'nodejs20.x'
+    })
+  }
 };
